@@ -91,7 +91,7 @@ public:
         }
         return ans;
     }
-    
+
 // int removeMax() {
 //     if (data.size() == 0) {
 //         return INT_MIN;
