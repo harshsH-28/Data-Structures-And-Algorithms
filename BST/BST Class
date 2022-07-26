@@ -33,7 +33,7 @@ class BST {
         if(node == NULL)
             return new BinaryTreeNode<int>(data);
         
-        if(node->data >= data)
+        if(node->data > data)
             node->left = insert(data,node->left);
         else
             node->right = insert(data,node->right);
