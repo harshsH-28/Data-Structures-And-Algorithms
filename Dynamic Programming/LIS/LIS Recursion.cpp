@@ -1,5 +1,9 @@
-    // Longest Increasing Subsequence By Recursion
+
+
+// Longest Increasing Subsequence By Recursion
     
+class Solution {
+public:
     int findLIS(vector<int>& nums,int idx,int previdx,int n)
     {
         if(idx >= n)
@@ -17,3 +21,4 @@
         int n = nums.size();
         return findLIS(nums,0,-1,n);
     }
+};
