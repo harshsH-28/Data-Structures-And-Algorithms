@@ -7,7 +7,6 @@ class DisjointSet
 {
     vector<int> parent, rank, size;
 public:
-
     DisjointSet(int v)
     {
         rank.resize(v + 1, 0);
