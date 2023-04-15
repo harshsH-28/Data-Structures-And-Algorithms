@@ -3,7 +3,6 @@ class DisjointSet
 {
     vector<int> parent, rank;
 public:
-
     DisjointSet(int v)
     {
         rank.resize(v + 1, 0);
@@ -21,8 +20,8 @@ public:
 
     void unionByRank(int u, int v)
     {
-        int u_ulp = findPar(u);
-        int v_ulp = findPar(v);
+        int u_ulp = findPar(u); // u_ulp == ultimate parent of u
+        int v_ulp = findPar(v); // v_ulp == ultimate parent of v
         if (u_ulp == v_ulp) return;
 
         if (rank[u_ulp] < rank[v_ulp])
