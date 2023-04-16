@@ -6,14 +6,14 @@ bool dfs(int s, vector<int> adj[], vector<int> &visited, vector<int> &pathVisite
 
     for (auto i : adj[s])
     {
-        if (!visited[i] && !pathVisited[i])
+        if (!visited[i])
         {
             if (dfs(i, adj, visited, pathVisited))
                 return true;
         }
         // Four Cases visi == 0 && pvisi == 0, like this cases are 00, 01, 10, 11
         // 0
-        if (visited[i] && pathVisited[i]) return true;
+        if (pathVisited[i] == 1) return true;
     }
 
     pathVisited[s] = false;
