@@ -1,7 +1,10 @@
+// We can also use Set instead of Priority Queue but not much improvement in TC, but Set will helps you save uneccessary iteration but it will use log(setSize).
+// Set basically erase an old value in set which we will iterate over later but we found the better value from it,
+// so from erasing that value, in future we don't need to do the iteration for old value.
 class Solution
 {
-	public:
-	//Function to find the shortest distance of all the vertices
+public:
+    //Function to find the shortest distance of all the vertices
     //from the source vertex S.
     vector <int> dijkstra(int V, vector<vector<int>> adj[], int S)
     {
