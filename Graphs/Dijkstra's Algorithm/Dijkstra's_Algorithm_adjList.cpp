@@ -1,6 +1,8 @@
 // We can also use Set instead of Priority Queue but not much improvement in TC, but Set will helps you save uneccessary iteration but it will use log(setSize).
 // Set basically erase an old value in set which we will iterate over later but we found the better value from it,
 // so from erasing that value, in future we don't need to do the iteration for old value.
+// TC -> O(ElogV)
+// SC -> O(V + E)
 class Solution
 {
 public:
