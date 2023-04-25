@@ -1,4 +1,6 @@
 // Prim's Algorihtm using Adjacency List
+// Time Complexity => O((V+E)LogE)
+// Space Complexity => O(E + V)
 int primsAlgo(int V, vector<vector<int>> adj[])
 {
     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
